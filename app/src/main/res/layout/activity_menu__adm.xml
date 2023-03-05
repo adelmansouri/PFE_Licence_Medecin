@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/menu_usr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <include
+        android:id="@+id/ProgressBarMenuUsr"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        />
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:id="@+id/menu_notif_usr"
+        android:layout_above="@id/Btn_Supprimer">
+
+        <FrameLayout
+            android:id="@+id/Fragment_menu_usr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/Btn_Supprimer"
+            android:layout_below="@id/toolbar_usr"
+
+            />
+
+
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/Menu_Notif_ProfilUsr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            app:itemTextColor="@color/color_background_usr"
+            app:itemIconTint="@color/color_background_usr"
+            app:menu="@menu/menu_notif_adm"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/logo_navigation_view"
+
+            />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/Recherche_avancée"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            app:itemTextColor="@color/color_background_usr"
+            app:itemIconTint="@color/color_background_usr"
+            android:layout_gravity="end"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/Recherche_Avancée_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recherche Avancée :"
+                    android:textColor="@color/Black"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nom de Médecin :"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/Nom_SearchAdv"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:background="@drawable/rec_black"
+                    android:textCursorDrawable="@color/Black"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:inputType="textPersonName"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Prénom de Médecin :"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/Prenom_SearchAdv"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:background="@drawable/rec_black"
+                    android:textCursorDrawable="@color/Black"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:inputType="textPersonName"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Sexe de Médecin :"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Spinner
+                    android:id="@+id/Sexe_SearchAdv"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:background="@drawable/rec_black"
+                    android:entries="@array/Sexe"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@drawable/bg_btn_black"
+                    android:text="@string/filtrer"
+                    android:textSize="15sp"
+                    android:onClick="Filtrer"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </android.support.design.widget.NavigationView>
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <Button
+        android:id="@+id/Btn_Supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BottomNav_Usr"
+        android:text="@string/supprimer"
+        android:background="@color/gradStart"
+        android:onClick="Supprimer"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/Btn_Supprimer_Fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BottomNav_Usr"
+        android:text="@string/supprimer"
+        android:background="@color/gradStart"
+        android:onClick="Supprimer_Fav"
+        android:visibility="gone"/>
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/BottomNav_Usr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_bot_nav"
+        app:itemBackground="@color/grey"
+        app:itemIconTint="@color/color_background_usr"
+        app:itemTextColor="@color/color_background_usr"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_usr"
+            layout="@layout/toolbar"/>
+
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/Materiel_Search_Mdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

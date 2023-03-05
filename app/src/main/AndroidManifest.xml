@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pfe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".Message_ProfilMdc"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".DemandeRDVMdc"
+            android:theme="@style/AppTheme.NoActionBar1"/>
+        <activity
+            android:name=".ValiderCommentaire"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemandeInscription"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/Maps_Key" />
+
+        <activity
+            android:name=".Google_Maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MotDePasse_Oublier"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifierInformation_ProfilUsr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifierInformation_ProfilMdc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Message_ProfilUsr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RDV_Profil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profil_Mdc_search"
+            android:parentActivityName=".Menu_Usr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_inscription"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu_Adm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu_Usr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu_Mdc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

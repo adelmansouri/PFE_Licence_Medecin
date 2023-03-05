@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil_Mdc_search"
+    android:background="@color/grey">
+
+
+
+    <ScrollView
+        android:id="@+id/ScrollView_search_mdc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/entete_mdc_recherche"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/background_profil_mdc">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_mdc_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent" />
+
+                <ImageView
+                    android:focusable="true"
+                    android:id="@+id/Photo_Mdc_H_F"
+                    android:layout_width="200dp"
+                    android:layout_height="190dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/photo_medecin"/>
+
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Envoi_Msg"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_message_grey_24dp"
+                        app:civ_border_color="@color/gradStop"
+                        app:civ_border_width="5dp"
+                        app:civ_circle_background_color="@color/gradStop"
+                        android:onClick="Envoi_Msg"/>
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Appeler_Mdc"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_phone_grey_24dp"
+                        app:civ_border_color="@color/gradStop"
+                        app:civ_border_width="5dp"
+                        app:civ_circle_background_color="@color/gradStop"
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Favoris_Mdc"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_favorite_grey_24dp"
+                        app:civ_border_color="@color/gradStop"
+                        app:civ_border_width="5dp"
+                        app:civ_circle_background_color="@color/gradStop"
+                        android:onClick="Favoris_Mdc"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_location_on_grey_24dp"
+                        app:civ_border_color="@color/gradStop"
+                        app:civ_border_width="5dp"
+                        app:civ_circle_background_color="@color/gradStop"
+                        android:onClick="GeoLocMdc"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/entete_mdc_recherche"
+                android:background="@color/grey">
+
+                <LinearLayout
+                    android:id="@+id/linear_nom_prenom_mdc_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Nom_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/Prenom_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Specialité_search_mdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_nom_prenom_mdc_search"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/Info_search_mdc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Specialité_search_mdc"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adresse_courriel"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/AdresseCourriel_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/adresse_postale"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/AdressePostale_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/sexe"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Sexe_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/numero_de_t_l_phone"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/NumTel_Search_Mdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Donner_note_au_medecin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Info_search_mdc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/donner_une_note_au_m_decin"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/Rating_bar_search_mdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Donner_note_au_medecin_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:stepSize="1.0"
+                    android:theme="@style/RatingBar" />
+
+                <Button
+                    android:id="@+id/btn_demande_rdv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/Rating_bar_search_mdc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_btn_black"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="@string/demander_un_rendez_vous"
+                    android:textSize="15sp"
+                    android:onClick="Demande_rdv"/>
+
+                <Button
+                    android:id="@+id/btn_ajouter_commentaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/btn_demande_rdv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_black"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="@string/ajouter_un_commentaire"
+                    android:textSize="15sp"
+                    android:onClick="AjouterCommentaire"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/Comm"
+                    android:layout_below="@id/btn_ajouter_commentaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/commentaires"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/Comm"
+                    android:background="@drawable/rec_black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/NoCommentaire_SearchMdc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/pas_de_commentaires"
+                        android:textSize="20sp"
+                        android:textColor="@color/gradStop"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"/>
+
+                    <ListView
+                        android:focusable="false"
+                        android:id="@+id/Liste_Commentaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible"
+                        android:nestedScrollingEnabled="true"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <!--<ListView
+        android:id="@+id/Liste_Commentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollView_search_mdc"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:visibility="visible"/>-->
+
+
+
+
+
+    <include
+        android:id="@+id/ProgressBarSearchMdc"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

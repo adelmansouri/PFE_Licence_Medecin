@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValiderCommentaire">
+
+    <include
+        android:id="@+id/ProgressBarValiderCommentaire"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/toolbar_ValiderCommentaire"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_ValiderCommentaire"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commentaire de :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TV_NomPrenomUsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NomPrenom Usr"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="à :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TV_NomPrenomMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NomPrenom Mdc"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contenue du Commentaire :"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TV_ContenueCom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contenue"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Black"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Confirmer le commentaire"
+            android:background="@drawable/bg_btn_black"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingRight="30dp"
+            android:onClick="Confirmer_Commentaire"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Refuser le commentaire"
+            android:background="@drawable/bg_btn_black"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingRight="30dp"
+            android:onClick="Refuser_Commentaire"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/recherche"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/search_adv_icon"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/recherche_avanc_e"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/Modifier_Profil_Usr"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="@string/modifier_profil_usr"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/Supprimer_Favoris_Profil_Usr"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="@string/supprimer_favoris_profil_usr"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/Supprimer_Messages_Profil_Usr"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="@string/supprimer_messages_profil_usr"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotDePasse_Oublier"
+    android:background="@drawable/background_app">
+
+    <include
+        android:id="@+id/toolbar_MdpOublier"
+        layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veuillez introduire votre adresse courriel :"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/AdrMail_MdpOublier"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rec"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@color/Black"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nous allons vous envoyer un mail avec un nouveau mot de passe qui vous pouvez modifier par la suite."
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/cnx_btn"
+            android:text="Envoyer"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:onClick="Envoyer_Email"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

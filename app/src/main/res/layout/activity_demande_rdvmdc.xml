@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemandeRDVMdc">
+
+    <include
+        android:id="@+id/toolbar_Demande_RdvMdc"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_Demande_RdvMdc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demande De Rendez-vous de :"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/Demande_RdvMdc_MNomPrenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:layout_marginTop="10dp"
+                android:text="Monsieur : Nom Prenom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:textSize="15sp"
+                android:text="Veuillez valider ou refuser la demande de rendez-vous."
+                android:textColor="@color/Black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:text="Si vous renfirmez la demande veuillez donner la date et l'heure de rendez-vous :"
+                android:layout_marginTop="2sp"/>
+
+            <TextView
+                android:id="@+id/CliquerIci_HeureDemRdvMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cliquer ici pour ajouter une date"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:onClick="Date_DemRDVMdc"/>
+
+            <TextView
+                android:id="@+id/Date_DemRdvMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/Black"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/CliquerIci_DateDemRdvMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cliquer ici pour ajouter l'heure"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:onClick="Heure_DemRDVMdc"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Heure_DemRdvMdc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/Black"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Valider le rendez-vous"
+                android:background="@drawable/bg_btn_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:onClick="Valider_rendez_vous"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Refuser le rendez-vous"
+                android:background="@drawable/bg_btn_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:onClick="Refuser_rendez_vous"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

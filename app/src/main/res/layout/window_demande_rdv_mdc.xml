@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgrey"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/Fermer_Demande_RdvMdc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="@string/x"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_cercle_tv"/>
+
+    <TextView
+        android:id="@+id/window_Demande_RdvMdc_Msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous voullez vraiment valider le rdv ?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/Window_Demande_RdvMdc_Annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non"
+            android:background="@color/transparent"
+            android:textColor="@color/gradStop"
+            android:textSize="15sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/Window_Demande_RdvMdc_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oui"
+            android:background="@color/transparent"
+            android:textColor="@color/gradStop"
+            android:textSize="15sp"
+            android:layout_gravity="end" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

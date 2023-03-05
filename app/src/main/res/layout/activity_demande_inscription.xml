@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemandeInscription">
+
+    <include
+        android:id="@+id/ProgressBarDemandeInscrip"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/toolbar_DemandeInscrip"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_DemandeInscrip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom et Prenom de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_NomPrenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom et prenom"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Specialité de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_Specialite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specialité"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Adresse Postale de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_AdrMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse + wilaya "
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date De Naissance de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_DateDeNaissance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date de naissance"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Adresse Courriel de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_AdrMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AdrMail"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sexe de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_Sexe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexe"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Numéro de Téléphone de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TV_NumTelMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NumTel"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Justificatif de Medecin :"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/ImageView_ImageMdc"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Confirmer l'inscription"
+                android:background="@drawable/bg_btn_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:onClick="Confirmer_Inscrip"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Refuser l'inscription"
+                android:background="@drawable/bg_btn_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:onClick="Refuser_Inscrip"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

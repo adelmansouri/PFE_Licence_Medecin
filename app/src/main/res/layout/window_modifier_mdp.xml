@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/darkgrey"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/Fermer_Modifier_Mdp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:text="@string/x"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_cercle_tv"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="Mot de passe actuel :"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/Window_Modifier_Mdp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rec"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:gravity="top|start"
+        android:textCursorDrawable="@color/white"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nouveau mot de passe :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/Window_Modifier_Mdp_New"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rec"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:gravity="top|start"
+        android:textCursorDrawable="@color/white"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Confirmer mot de passe :"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/Window_Modifier_Mdp_Conf_New"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rec"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:gravity="top|start"
+        android:textCursorDrawable="@color/white"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Worning_Modifier_Mdp_Erreur"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous n'avez saisi aucun message, veuillez réessayer."
+        android:textSize="18sp"
+        android:textColor="@color/gradStart"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/Window_Modifier_Mdp_Annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/annuler"
+            android:background="@color/transparent"
+            android:textColor="@color/gradStart"
+            android:textSize="15sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/Window_Modifier_Mdp_Modifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modifier"
+            android:background="@color/transparent"
+            android:textColor="@color/gradStart"
+            android:textSize="15sp"
+            android:layout_gravity="end" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

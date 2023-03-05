@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Message_ProfilUsr">
+
+    <include
+        android:id="@+id/ProgressBarMenuUsr"
+        layout="@layout/progress_bar"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/toolbar_Message"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_Message">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Docteur :"
+                    android:textSize="18sp"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:id="@+id/Nom_Prenom_MessageMdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom_Prenom"
+                    android:textSize="20sp"
+                    android:textColor="@color/Black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/SpecialiteMdc_MessageMdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specialite"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/Contenue_Msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Contenue MSG"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message envoyé le "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Date_Msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="à "
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Heure_Msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heure"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_RépondreAuMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg_btn_black"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Répondre au message"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="RepondreAuMsg"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

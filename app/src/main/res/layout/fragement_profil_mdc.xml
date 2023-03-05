@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/Relative_entete_usr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/background_profil_mdc">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_profil_usr"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_person_black_50dp"
+                    app:civ_border_width="5dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_below="@id/person_profil_usr"
+                    android:layout_centerHorizontal="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/Nom_usr_profil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/transparent"
+                            android:enabled="false"
+                            android:textColor="@color/Black"
+                            android:textSize="20sp"
+                            android:text="Nom"/>
+
+                        <TextView
+                            android:id="@+id/Prenom_usr_profil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:enabled="false"
+                            android:textColor="@color/Black"
+                            android:textSize="20sp"
+                            android:text="Prenom"/>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/SpecialiteMdc_Profil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:textColor="@color/Black"
+                        android:textSize="15sp"
+                        android:text="Specialité"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Relative_entete_usr"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="@color/grey"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse Courriel :"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/AdrMail_usr_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse Postale :"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/AdrPostale_usr_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date De Naissance :"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/DateDeNaissance_usr_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexe :"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/Sexe_usr_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numéro de Téléphone :"
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/NumTel_usr_profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/Black"
+                    android:textSize="15sp"
+                    android:enabled="false"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
